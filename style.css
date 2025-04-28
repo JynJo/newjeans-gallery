@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Jersey 20', sans-serif;
+}
+
+.step {
+  display: none;
+  animation: showStep .6s ease-out forwards;
+}
+
+.step.active {
+  display: block;
+}
+
+/* #continue {
+    font-size: 1.2em;
+    color: whitesmoke;
+    letter-spacing: .5em;
+    cursor: pointer;
+} */
+
+button {
+    font-size: 1.2em;
+    color: whitesmoke;
+    letter-spacing: .5em;
+    cursor: pointer;
+}
+
+
+
+@keyframes showStep {
+    from {
+        opacity: 0;
+        transform: translateY(100px)
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0)
+    }
+}

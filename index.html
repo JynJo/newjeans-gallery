@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <form id="form" class="p-5">
+      <!-- FIRST STEP -->
+      <div class="step active">
+        <img src="./newjeans.png" class="object-fit-cover" />
+        <h2 class="text-2xl text-pink-400">Pick a Member</h2>
+
+        <!-- Images -->
+        <div class="images flex flex-row justify-evenly items-center">
+          <!-- Hyein -->
+          <div
+            class="cursor-pointer p-2 transition duration-300 transform hover:scale-105 "
+            id="hyein"
+          >
+            <img
+              src="./images/options/hyein.jpg"
+              width="100"
+              class="object-cover shadow-sm"
+            />
+            <span class="text-md">HYEIN</span>
+          </div>
+
+          <!-- Haerin -->
+          <div
+            class="cursor-pointer p-2 transition duration-300 transform hover:scale-105 "
+            id="haerin"
+          >
+            <img
+              src="./images/options/haerin.jpg"
+              width="100"
+              class="object-cover shadow-sm"
+            />
+            <span class="text-md">HAERIN</span>
+          </div>
+
+          <!-- Danielle -->
+          <div
+            class="cursor-pointer p-2 transition duration-300 transform hover:scale-105"
+            id="danielle"
+          >
+            <img
+              src="./images/options/danielle.jpg"
+              height="100"
+              width="100"
+              class="object-cover shadow-sm"
+            />
+            <span class="text-md">DANIELLE</span>
+          </div>
+
+          <!-- Minji -->
+          <div
+            class="cursor-pointer p-2 transition duration-300 transform hover:scale-105"
+            id="minji"
+          >
+            <img
+              src="./images/options/minji.jpg"
+              width="100"
+              class="object-cover shadow-sm"
+            />
+            <span class="text-md">MINJI</span>
+          </div>
+
+          <!-- Hanni -->
+          <div
+            class="cursor-pointer p-2 transition duration-300 transform hover:scale-105"
+            id="hanni"
+          >
+            <img
+              src="./images/options/hanni.jpg"
+              width="100"
+              class="object-cover shadow-sm"
+            />
+            <span class="text-md">HANNI</span>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="continue"
+          class="shadow-sm mt-2 p-2 bg-pink-400 rounded-md self-center2"
+        >
+          Continue
+        </button>
+      </div>
+
+      <div class="step">
+        <h2 class="name capitalize text-4xl">Step 1</h2>
+
+
+
+         <!-- <input type="text" name="firstname" placeholder="First Name" required />
+        <button
+          type="button"
+          id="next2"
+          class="shadow-sm mt-2 p-2 bg-pink-400 rounded-md self-center2"
+
+        >
+          Next
+        </button> -->
+        <button type="button" id="prev1">Previous</button>
+      </div>
+
+      <div class="step">
+        <h2>Step 2</h2>
+        <input type="email" name="email" placeholder="Email" required />
+        <button type="button" id="prev2">Previous</button>
+        <button           class="shadow-sm mt-2 p-2 bg-pink-400 rounded-md self-center2"
+        type="button" id="next3">Next</button>
+      </div>
+
+      <div class="step">
+        <h2>Step 3</h2>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="button" id="prev3">Previous</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
