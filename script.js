@@ -59,10 +59,10 @@ document.getElementById("prev1").addEventListener("click", () => {
 //   showForm(currentStep);
 // });
 
-document.getElementById("prev3").addEventListener("click", () => {
-  currentStep--;
-  showForm(currentStep);
-});
+// document.getElementById("prev3").addEventListener("click", () => {
+//   currentStep--;
+//   showForm(currentStep);
+// });
 
 
 options.forEach((option) => {
