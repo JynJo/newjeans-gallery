@@ -13,7 +13,7 @@ const memberDetails = [
     birthdate: "2004-05-07",
     position: "Leader, Vocalist, Dancer",
     nationality: "Korean",
-    image: "./minji.jpg",
+    images: 3,
   },
   {
     id: "hanni",
@@ -22,7 +22,7 @@ const memberDetails = [
     birthdate: "2004-10-06",
     position: "Vocalist, Dancer",
     nationality: "Vietnamese-Australian",
-    image: "./hanni.jpg",
+    images: 0,
   },
   {
     id: "danielle",
@@ -31,7 +31,7 @@ const memberDetails = [
     birthdate: "2005-04-11",
     position: "Vocalist, Dancer",
     nationality: "Korean-Australian",
-    image: "./danielle.jpg",
+    images:0,
   },
   {
     id: "haerin",
@@ -40,7 +40,7 @@ const memberDetails = [
     birthdate: "2006-05-15",
     position: "Vocalist",
     nationality: "Korean",
-    image: "./haerin.jpg",
+    images:0,
   },
   {
     id: "hyein",
@@ -49,7 +49,8 @@ const memberDetails = [
     birthdate: "2008-04-21",
     position: "Vocalist, Maknae",
     nationality: "Korean",
-    image: "./hyein.jpg",
+    images:0,
+
   },
 ];
 
@@ -60,7 +61,7 @@ function showGalerry(index) {
 
   memberDetails.forEach((detail, i) => {
     if (detail.id == selectedMember) {
-      for (let i = 0; i < 2; i++) {
+      for (let i = 0; i < detail.images; i++) {
         var img = document.createElement("img");
         img.src = `./images/gallery/${selectedMember}/${i}.jpg`;
         img.width = 200;
